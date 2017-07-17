@@ -1,15 +1,22 @@
-<div class="center">
+<div class="center" [@flyInOut]="shouldToggle" style=" background: rgba(54, 25, 25, .5); height:100vh;">
+	<div style="width:80%; padding-top:15%;">
 			<div class="name-txt-center">
-				<div class="name-left" [@flyInOut]="shouldToggle"><img src="/assets/images/UMAR_text.png"></div>
-				<div class="name-right "><img src="/assets/images/ABBAS_text.png"></div>
+				<div class="name-left"><img src="/assets/images/UMAR_text.png"></div>
+				<div class="name-right"><img src="/assets/images/ABBAS_text.png"></div>
 				<div class="clear" ></div>
 			</div>
 			<div class="links">FRONT-END DEVELOPER <i>•</i>&nbsp;&nbsp;WEB ANALYST <i>•</i>&nbsp;&nbsp;UI/UX DESIGNER </div>
-      
+      </div>
 </div>
+<!-- <app-lab *ngIf='giveInputToChild; else loadPlain' [test]="'directValue'"></app-lab>
+<ng-template #loadPlain>
+	<app-lab></app-lab>
+</ng-template> -->
 
+<!-- <app-lab [test]="giveInputToChild ? propFromComponent : ' '" (enough)='handleEnough()'></app-lab>
 
-
-
+<div *ngIf='!hideToggleButton'>
+<button (click)="justToggle()">toggle</button>
+</div> -->
 
 

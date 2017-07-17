@@ -1,3 +1,9 @@
-<router-outlet></router-outlet>
-<a href="#about" [routerLink]="['/about']" [@flyInOut]="masterx"><div class="arrowbtn"><span class="fa fa-angle-double-down"></span></div></a>
+<!-- Layout -->
+
+<div id="Layout">
+    <div id="LayoutLeft"><router-outlet></router-outlet></div>
+    <div id="LayoutRight"><app-menu></app-menu> </div>
+    <div id="LayoutClear"></div>
+</div>
+
 <app-footer></app-footer>

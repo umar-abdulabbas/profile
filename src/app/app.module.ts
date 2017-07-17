@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCheckboxModule, MdTabsModule} from '@angular/material';
+import { MdButtonModule, MdCheckboxModule, MdTabsModule, MdGridListModule, MdInputModule, MdListModule} from '@angular/material';
 import { CONST_ROUTING } from './app.routing'; 
 import { AppComponent } from './app.component';
+import { AnimationsComponent} from './animations/animations.component';
 import { MenuComponent } from './menu/menu.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
@@ -18,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
+    AnimationsComponent,
     MenuComponent,
     IntroComponent,
     AboutComponent,
@@ -35,7 +37,10 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MdButtonModule,
     MdCheckboxModule,
-    MdTabsModule
+    MdTabsModule,
+    MdGridListModule, 
+    MdInputModule,
+    MdListModule
   ],
    exports: [MdButtonModule, MdCheckboxModule],
   providers: [],

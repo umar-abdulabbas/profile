@@ -1,6 +1,7 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import {MdButtonModule, MdCheckboxModule} from '@angular/material';
 import {trigger, state, style, animate,  transition} from '@angular/animations';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
@@ -27,11 +28,31 @@ import {trigger, state, style, animate,  transition} from '@angular/animations';
 })
 export class IntroComponent implements OnInit {
   @Input() shouldToggle;
-  @Output() master;
+  @Input() path = '';
+  @Output() next ='/skills';
  // @Input() dynamicHeight = true;
-  constructor() { }
+ 
+ propFromComponent: string ="asfdafdsaf"
+ giveInputToChild = false;
+ hideToggleButton = false;
 
   ngOnInit() {
   }
+  constructor( private router:Router)
+  {
+    console.log(this.router);
+  }
+   private navgiate(){
+    this.router.navigateByUrl(this.path);
+    this.path=this.next;
+  }
 
+  private justToggle() {
+    this.giveInputToChild = !this.giveInputToChild;
+  }
+
+  private handleEnough() {
+    console.log("got engouh msg")
+    this.hideToggleButton = true;
+  }
 }

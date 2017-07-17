@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {trigger, state, style, animate, transition} from '@angular/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -11,7 +12,7 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
     transition('void => *', [
       style({
         opacity: 50, 
-        transform: 'translateX(-100%)'
+        transform: 'translateY(1000%)'
       }),
       animate('0.2s ease-in')
     ]),
@@ -19,18 +20,25 @@ import {trigger, state, style, animate, transition} from '@angular/animations';
       animate('0.2s 0.1s ease-out', style({
         opacity: 0,
         backgroundColor: '#000',
-        transform: 'translateX(100%)'
+        transform: 'translateY(-100%)'
       }))
     ])
   ])
 ]
 })
 export class AboutComponent implements OnInit {
-@Input() shouldToggle;
-
-  constructor() { }
-
-  ngOnInit() {
+//@Input() shouldToggle;
+@Input() next = "";
+ 
+    ngOnInit() {
   }
 
+  constructor(private router:Router){
+      
+    }
+  
+    navigate(){
+
+      this.router.navigateByUrl(this.next);
+  }
 }

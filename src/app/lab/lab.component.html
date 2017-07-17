@@ -1,3 +1,6 @@
 <p>
   lab works!
 </p>
+<input *ngIf='test;else dummy' [value]="test">
+<ng-template #dummy>no input now</ng-template>
+<button (click)='sayEnoughToParent()'>enough</button>

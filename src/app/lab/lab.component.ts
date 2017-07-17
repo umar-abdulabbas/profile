@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-lab',
@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LabComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  public test : string;
+
+  @Output()
+  public enough: EventEmitter<any> = new EventEmitter();
+  
+  constructor() {
+    // this.test = 'qwer2'
+   }
 
   ngOnInit() {
+  }
+
+  sayEnoughToParent() {
+    // tell to parent,
+    console.log("enough") 
+    this.enough.emit()
   }
 
 }
