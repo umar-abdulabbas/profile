@@ -1,29 +1,27 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { bottom } from '../animations/animations.component';
 @Component({
   selector: 'app-lab',
   templateUrl: './lab.component.html',
-  styles: []
+  styles: [],
+   animations: [bottom],
+  host: { '[@bottom]': '' }
 })
 export class LabComponent implements OnInit {
-
+  pageName = 'contact'
   @Input()
   public test : string;
 
   @Output()
   public enough: EventEmitter<any> = new EventEmitter();
   
-  constructor() {
-    // this.test = 'qwer2'
-   }
-
+  constructor(private router:Router) { }
   ngOnInit() {
   }
 
-  sayEnoughToParent() {
-    // tell to parent,
-    console.log("enough") 
-    this.enough.emit()
+  nextComponent(pageName){
+    console.log("Clicked");
+    this.router.navigateByUrl('/'+pageName);
   }
-
 }

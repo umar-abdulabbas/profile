@@ -1,25 +1,25 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { flyFromBottom } from '../animations/animations.component';
+import { bottom } from '../animations/animations.component';
 
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styles: [],
-  animations: [flyFromBottom],
-   host: { '[@flyFromBottom]': '' }
+ animations: [bottom],
+  host: { '[@bottom]': '' }
 })
 export class SkillsComponent implements OnInit {
  @Input()
- next="";
+ pageName ='works';
   constructor(private router:Router) { }
 
   ngOnInit() {
   }
  
-   navigate(){
-
-      this.router.navigateByUrl(this.next);
+  nextComponent(pageName){
+    console.log("Clicked");
+    this.router.navigateByUrl('/'+pageName);
   }
 }

@@ -16,6 +16,7 @@ import { LabComponent } from './lab/lab.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

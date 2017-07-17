@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {trigger, state, style, animate,  transition} from '@angular/animations';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -16,12 +16,17 @@ import {trigger, state, style, animate,  transition} from '@angular/animations';
 ]
 })
 export class FooterComponent implements OnInit {
-    @Input() footerAnim;
-  footertxt = 'Developed uisng Angular and Angular Material Design Component';
+ // @Input() footerAnim;
+  idx=1;
+  pageName = 'about';
+  footertxt = 'Developed uisng Angular and Angular Material* Design Component';
 
-  constructor() { }
+  constructor( private router:Router) { }
 
   ngOnInit() {
   }
-
+  
+  
 }
+
+

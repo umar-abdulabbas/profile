@@ -1,0 +1,16 @@
+   #aboutLayout{
+       text-align:center;border-top:5px solid #29afe2; background: rgba(255, 255, 255, 1); height:100vh;
+   }
+    .aboutHeader{
+         font-family: 'Open Sans Condensed', sans-serif;
+         color: #000;
+         font-size: bold;
+    }
+    
+    #about{padding:60px 0 100px 0; border-bottom:6px solid #ccc;}
+#about H1{ text-align:center; color:#2a2b2c; }
+#about p{padding-top:30px;color:#2a2b2c;}
+.para-head{color:#29afe2!important; font-size:14px; font-weight:600;}
+.bdr-right{ text-align:center;}
+.bdr-right img{ width:400px; border:1px solid #29afe2;  border-radius: 400px;}
+.butdownload{  display: inline-block; padding: 14px 20px 12px; color: #fff; font-size: 14px; line-height: 20px;font-weight: 300; text-transform: uppercase; text-align: center; vertical-align: middle; cursor: pointer; border: none;  background:#29afe2;}
