@@ -4,7 +4,7 @@
 body{
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
 margin: 0px;
-background: url("/assets/images/umar_bg.png") no-repeat ;
+background: url("./assets/images/umar_bg.png") no-repeat ;
 
 background-size: auto 100%;     
 xbackground:#222222;
