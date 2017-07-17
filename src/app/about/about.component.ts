@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import {trigger, state, style, animate, transition} from '@angular/animations';
 import { Router } from '@angular/router';
 import { bottom } from '../animations/animations.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',

@@ -53,3 +53,7 @@ a:link{text-decoration:none;}
         bottom:50px;
       }
  
+ @media only screen and (max-width: 500px) {
+  
+   .arrowbtn{  left:40%;}
+}

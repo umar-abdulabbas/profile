@@ -15,7 +15,7 @@ import { WorksComponent } from './works/works.component';
 import { LabComponent } from './lab/lab.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     WorksComponent,
     LabComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,8 @@ import { FooterComponent } from './footer/footer.component';
     MdTabsModule,
     MdGridListModule, 
     MdInputModule,
-    MdListModule
+    MdListModule,
+    FlexLayoutModule
   ],
    exports: [MdButtonModule, MdCheckboxModule],
   providers: [],
