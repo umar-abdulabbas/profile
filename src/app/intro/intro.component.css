@@ -1,13 +1,12 @@
-   .modal {
-        background-color:#ffffff;
-        border:1px solid lightgray;
-        box-shadow:0 0 7px rgba(0,0,0,.2);
-        width:40%;
-        text-align:center;
-        padding:30px;
-        border-radius:6px;
-        font-family:Roboto, helvetica, arial, sans-serif;
-        font-weight:400;
-        margin:40px auto;
-        overflow-y: hidden;
-      }
+ #introLayout{
+    border-top:5px solid #29afe2; background: rgba(54, 25, 25, .5); height:100vh;
+ }
+.name-txt-center div img{ width:400px;}
+.name-left{ float: left; width:50%; text-align:right;}
+.name-right{ float:right; width:50%; }
+
+@media only screen and (max-width: 500px) {
+  .name-txt-center div img{ width:100px;} 
+   .arrowbtn{  left:40%;}
+   .background{ background: #000}
+}

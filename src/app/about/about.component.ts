@@ -1,44 +1,28 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {trigger, state, style, animate, transition} from '@angular/animations';
 import { Router } from '@angular/router';
-
+import { bottom } from '../animations/animations.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styles: [],
-  animations: [
-  trigger('flyInOut', [
-    state('in', style({opacity: 1, transform: 'translateX(0)'})),
-    transition('void => *', [
-      style({
-        opacity: 50, 
-        transform: 'translateY(1000%)'
-      }),
-      animate('0.2s ease-in')
-    ]),
-    transition('* => void', [
-      animate('0.2s 0.1s ease-out', style({
-        opacity: 0,
-        backgroundColor: '#000',
-        transform: 'translateY(-100%)'
-      }))
-    ])
-  ])
-]
+  styleUrls: ['./about.component.css'],
+  animations: [bottom],
+  host: { '[@bottom]': '' }
 })
 export class AboutComponent implements OnInit {
 //@Input() shouldToggle;
 @Input() next = "";
- 
+ pageName = 'skills'
     ngOnInit() {
   }
 
   constructor(private router:Router){
       
     }
-  
-    navigate(){
-
-      this.router.navigateByUrl(this.next);
+  nextComponent(pageName){
+    console.log("Clicked");
+    this.router.navigateByUrl('/'+pageName);
   }
+   
 }

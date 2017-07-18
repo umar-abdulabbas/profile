@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit{
 
-   
+   id:number = 1 ; 
     ngOnInit() {
   }
     constructor(private router:Router){
@@ -17,6 +17,6 @@ export class AppComponent implements OnInit{
     }
 
   navigate(){
-      this.router.navigateByUrl('/about');
+      //this.router.navigateByUrl('/about', {});
   }
 }

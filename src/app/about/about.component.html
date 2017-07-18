@@ -1,6 +1,38 @@
-<div [@flyInOut] style="text-align:center;background: rgba(54, 25, 25, .5); height:100vh; overflow:hidden;">
-  about works! 
+<!--<div [@bottom] id="aboutLayout">
+    <h1 class="aboutHeader">ABOUT "</h1>
   <p>
     Proficient IT professional with 7 years’ experience and a real passion for front-end and mobile application development. Readily embracing cutting-edge technology, gained an in-depth understanding of the main web and mobile platforms. Worked with various domains like Banking, Retail & Health Care. In leading people along with ample opportunities for growth and work with highly technical web and mobile applications.
   </p>
+  <div class="row">
+			<div class="bdr-right" style="width:50%; float:left;">
+			<img src="./assets/images/umar_small.png">
+			</div>
+			<div  style="width:50%; float:left; color:#000">
+			    <p class="para-head wow  slideInRight animated" style="visibility: visible; animation-name: slideInRight;">FRONT-END DEVELOPER <i>•</i>&nbsp;&nbsp;WEB ANALYST <i>•</i>&nbsp;&nbsp;UI/UX DESIGNER</p>
+			    <p class="wow  slideInRight animated" style="visibility: visible; animation-name: slideInRight;">Extensive experience in design and development of front-end applications using HTML 5/CSS3 Animations/JavaScript technologies and open source libraries like Backbone JS, Angular JS, React JS, Grunt, Gulp, Bower, Jasmine, Karma, Protractor, Maven &amp; Node JS
+			    </p><p class="wow  slideInRight animated" style="visibility: visible; animation-name: slideInRight;">An excellent team player with an ability to perform individually, good interpersonal relations, strong communication skills, hardworking and high level of motivation. A quick learner with an aptitude for taking new responsibilities
+			    </p><p class="wow  slideInRight animated" style="visibility: visible; animation-name: slideInRight;">Very good experience in team building, grooming and leading development teams to deliver various product features related to application development of Travel, Retail &amp; Banking domains</p>
+			    <p class="but-cent wow  slideInRight animated" style="visibility: visible; animation-name: slideInRight;"><a href="./assets/images/UmarKathap AbdulAbbas_Fron-End Professional.pdf" class="butdownload" target="_blank">Download Resume &nbsp;<i class="fa fa-download"></i></a></p>
+			
+			</div>
+		</div>
+</div>-->
+<div [@bottom] id="aboutLayout" class="container "
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0" >
+  <div class="item item-1 bdr-right" fxFlex="50%" style="box-shadow: 2px 6px;"><img src="./assets/images/umar_small.png"/></div>
+  
+  <div class="item item-3" fxFlex="50%">
+		 <p class="para-head wow  slideInRight animated">FRONT-END DEVELOPER <i>•</i>&nbsp;&nbsp;WEB ANALYST <i>•</i>&nbsp;&nbsp;UI/UX DESIGNER</p>
+			    <p class="wow  slideInRight animated" >Extensive experience in design and development of front-end applications using HTML 5/CSS3 Animations/JavaScript technologies and open source libraries like Backbone JS, Angular JS, React JS, Grunt, Gulp, Bower, Jasmine, Karma, Protractor, Maven &amp; Node JS
+			    </p><p class="wow  slideInRight animated">An excellent team player with an ability to perform individually, good interpersonal relations, strong communication skills, hardworking and high level of motivation. A quick learner with an aptitude for taking new responsibilities
+			    </p><p class="wow  slideInRight animated">Very good experience in team building, grooming and leading development teams to deliver various product features related to application development of Travel, Retail &amp; Banking domains</p>
+			    <p class="but-cent wow  slideInRight animated" ><a href="./assets/images/UmarKathap AbdulAbbas_Fron-End Professional.pdf" class="butdownload" target="_blank">Download Resume &nbsp;<i class="fa fa-download"></i></a></p>
+			
+
+	</div>
 </div>
+<div class="arrowbtn animated slideInUp" (click)="nextComponent(pageName)"><span class="fa fa-angle-double-down"></span></div>	

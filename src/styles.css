@@ -4,7 +4,7 @@
 body{
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
 margin: 0px;
-background: url("./assets/images/umar_bg.png") no-repeat ;
+background: url("./assets/images/laptop_code.jpg") no-repeat ;
 
 background-size: auto 100%;     
 xbackground:#222222;
@@ -27,7 +27,7 @@ color: #FFF!important; overflow: hidden;
     left: 0px;
     width: 100%;
     min-height: 800px;
-    background-image: url("/assets/images/grid.png");
+    background-image: url("./assets/images/grid.png");
 
 }
 md-grid-tile {
@@ -42,12 +42,10 @@ a:link{text-decoration:none;}
 
 .homedisplay{display:none;}
 
-.name-txt-center div img{ width:400px}
-.name-left{ float: left; width:50%; text-align:right;}
-.name-right{ float:right; width:50%; }
+
 .links {text-align:center; color:#FFF; font-size:20px; margin-top:30px}
 .links i { color:#29afe2; font-size:24px; font-weight:700;}
-.arrowbtn{ border-radius: 50%; margin:0 auto; cursor: pointer;  width: 74px; height: 74px; border: 1px solid #29afe2; background: rgba(43,176,224,0.5); margin-top:90px; }
+.arrowbtn{ border-radius: 50%; margin:0 auto; cursor: pointer;  width: 74px; height: 74px; border: 1px solid #29afe2; background: rgba(43,176,224,0.5); position: absolute; bottom:100px; left: 48%; }
 .arrowbtn span{ line-height:74px; color:#FFF; font-size:42px; display:block;  text-align:center;}
 
     .mat-tab-header{
@@ -55,3 +53,7 @@ a:link{text-decoration:none;}
         bottom:50px;
       }
  
+ @media only screen and (max-width: 500px) {
+  
+   .arrowbtn{  left:40%;}
+}
