@@ -20,7 +20,7 @@ export class LabComponent implements OnInit {
   ngOnInit() {
   }
 
-  nextComponent(pageName){
+  nextComponent(){
     
     this.router.navigateByUrl('/contact');
   }

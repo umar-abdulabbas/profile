@@ -21,7 +21,7 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
   }
  
-  nextComponent(pageName){
+  nextComponent(){
     
     this.router.navigateByUrl('/works');
   }

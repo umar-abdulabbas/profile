@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
-   nextComponent(pageName){
+   nextComponent(){
     
     this.router.navigateByUrl('/intro');
   }

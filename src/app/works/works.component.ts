@@ -16,7 +16,7 @@ export class WorksComponent implements OnInit {
   ngOnInit() {
   }
   
-  nextComponent(pageName){
+  nextComponent(){
     console.log("Clicked");
     this.router.navigateByUrl('/lab');
   }
