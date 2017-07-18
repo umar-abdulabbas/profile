@@ -9,13 +9,13 @@ import { bottom } from '../animations/animations.component';
   host: { '[@bottom]': '' }
 })
 export class ContactComponent implements OnInit {
-  pageName = 'intro';
+  
   constructor(private router:Router) { }
 
   ngOnInit() {
   }
    nextComponent(pageName){
-    console.log("Clicked");
-    this.router.navigateByUrl('/'+pageName);
+    
+    this.router.navigateByUrl('/intro');
   }
 }

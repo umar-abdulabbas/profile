@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCheckboxModule, MdTabsModule, MdGridListModule, MdInputModule, MdListModule} from '@angular/material';
+import { MdButtonModule, MdCheckboxModule, MdTabsModule, MdGridListModule, MdInputModule, MdListModule, MdProgressSpinnerModule} from '@angular/material';
 import { CONST_ROUTING } from './app.routing'; 
 import { AppComponent } from './app.component';
 import { AnimationsComponent} from './animations/animations.component';
@@ -43,6 +43,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MdGridListModule, 
     MdInputModule,
     MdListModule,
+    MdProgressSpinnerModule,
     FlexLayoutModule
   ],
    exports: [MdButtonModule, MdCheckboxModule],

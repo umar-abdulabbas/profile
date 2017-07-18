@@ -1,4 +1,7 @@
-<div [@bottom] style="height:100vh; border-top:5px solid #29afe2; background: rgba(0, 0, 0, 0.1); ">
-  <h1 class="aboutHeader">skills works</h1>
+<div [@bottom] style="height:100vh; border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.8); ">
+  <h1 class="aboutHeader">Skills</h1>
+  <md-progress-spinner value=50 [color]="color" 
+        [mode]="mode"
+        [value]="value"></md-progress-spinner>
 </div>
-<div class="arrowbtn animated slideInUp" (click)="nextComponent(pageName)"><span class="fa fa-angle-double-down"></span></div>	
+<div class="arrowbtn" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>	

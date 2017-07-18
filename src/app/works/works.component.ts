@@ -10,7 +10,7 @@ import { bottom } from '../animations/animations.component';
   host: { '[@bottom]': '' }
 })
 export class WorksComponent implements OnInit {
- pageName = 'lab'
+ 
    constructor(private router:Router) { }
 
   ngOnInit() {
@@ -18,6 +18,6 @@ export class WorksComponent implements OnInit {
   
   nextComponent(pageName){
     console.log("Clicked");
-    this.router.navigateByUrl('/'+pageName);
+    this.router.navigateByUrl('/lab');
   }
 }

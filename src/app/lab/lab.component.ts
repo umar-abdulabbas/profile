@@ -21,7 +21,7 @@ export class LabComponent implements OnInit {
   }
 
   nextComponent(pageName){
-    console.log("Clicked");
-    this.router.navigateByUrl('/'+pageName);
+    
+    this.router.navigateByUrl('/contact');
   }
 }

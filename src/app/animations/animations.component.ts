@@ -67,3 +67,19 @@ trigger('flyFromTop', [
       ]
     );
  
+ export const zoom = 
+  trigger(
+    'zoom', [
+    state('inactive', style({
+      backgroundColor: '#FF0000',
+      transform: 'scale(10)',
+       
+    })),
+    state('active',   style({
+      backgroundColor: '#FF0000',
+      transform: 'scale(10.1)',
+     
+    })),
+    transition('inactive => active', animate('100ms ease-in')),
+    transition('active => inactive', animate('100ms ease-out'))
+  ]);

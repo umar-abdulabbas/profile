@@ -2,13 +2,13 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 import {MdButtonModule, MdCheckboxModule} from '@angular/material';
 import {trigger, state, style, animate,  transition} from '@angular/animations';
 import { Router } from '@angular/router';
-import { bottom } from '../animations/animations.component';
+import { bottom, zoom } from '../animations/animations.component';
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.css'],
-  animations: [bottom],
-  host: { '[@bottom]': '' }
+  animations: [bottom, zoom],
+  host: { '[@bottom]': '' , '[@zoom]': '' }
 })
 
 export class IntroComponent implements OnInit {
@@ -21,7 +21,7 @@ export class IntroComponent implements OnInit {
     
   }
   
-  nextComponent(pageName){
+  nextComponent(){
     this.router.navigateByUrl('/about');
   }
 }

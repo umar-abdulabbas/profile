@@ -11,9 +11,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
   host: { '[@bottom]': '' }
 })
 export class AboutComponent implements OnInit {
-//@Input() shouldToggle;
-@Input() next = "";
- pageName = 'skills'
+
     ngOnInit() {
   }
 
@@ -22,7 +20,7 @@ export class AboutComponent implements OnInit {
     }
   nextComponent(pageName){
     console.log("Clicked");
-    this.router.navigateByUrl('/'+pageName);
+    this.router.navigateByUrl('/skills');
   }
    
 }

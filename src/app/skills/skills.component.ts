@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { bottom } from '../animations/animations.component';
-
+import {MdProgressSpinnerModule} from '@angular/material';
 
 @Component({
   selector: 'app-skills',
@@ -11,15 +11,18 @@ import { bottom } from '../animations/animations.component';
   host: { '[@bottom]': '' }
 })
 export class SkillsComponent implements OnInit {
- @Input()
- pageName ='works';
+ 
+ 
+  color = 'primary';
+  mode = 'determinate';
+  value = 50;
   constructor(private router:Router) { }
 
   ngOnInit() {
   }
  
   nextComponent(pageName){
-    console.log("Clicked");
-    this.router.navigateByUrl('/'+pageName);
+    
+    this.router.navigateByUrl('/works');
   }
 }
