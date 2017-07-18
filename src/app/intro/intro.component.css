@@ -8,4 +8,5 @@
 @media only screen and (max-width: 500px) {
   .name-txt-center div img{ width:100px;} 
    .arrowbtn{  left:40%;}
+   .background{ background: #000}
 }
