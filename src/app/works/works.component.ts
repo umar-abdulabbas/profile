@@ -5,7 +5,7 @@ import { bottom } from '../animations/animations.component';
 @Component({
   selector: 'app-works',
   templateUrl: './works.component.html',
-  styles: [],
+  styleUrls: ['./works.component.css'],
    animations: [bottom],
   host: { '[@bottom]': '' }
 })

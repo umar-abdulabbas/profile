@@ -6,16 +6,17 @@ import {MdProgressSpinnerModule} from '@angular/material';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styles: [],
+  styleUrls: ['./skills.component.css'],
  animations: [bottom],
   host: { '[@bottom]': '' }
 })
 export class SkillsComponent implements OnInit {
  
  
-  color = 'primary';
+  color = 'warn';
   mode = 'determinate';
   value = 50;
+  bufferValue = 75;
   constructor(private router:Router) { }
 
   ngOnInit() {

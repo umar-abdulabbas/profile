@@ -1,0 +1,96 @@
+   #contactLayout{
+       border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.9); height: 100vh;align-content: center;animation-delay:10s; justify-content: center;
+   }
+   
+#contactContainer{
+    margin-top:100px;
+    xtext-align: center;
+}
+.contactHeader{
+         
+         color: #000;
+         font-size: bold;
+         text-align: center;
+    }
+.social-icons {
+  list-style-type: none;
+  margin: 0 auto 20px;
+  padding: 0;
+  width: 400px;
+  height: 100px;
+}
+
+.tab {
+  margin-right: 10px;
+  border-radius: 0 0 25px 25px;
+  float: left;
+}
+
+.circle {
+  padding: 15px 15px;
+  width: 50px;
+  font-size: 50px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  border: solid 2px;
+}
+.fa-whatsapp:before{content:"\f232"}
+
+.fa-envelope-o {
+  color: hsl(221, 44%, 41%);
+  border-color: hsl(221, 44%, 41%);
+}
+.fa-whatsapp{
+  color: rgb(71, 194, 71);
+  border-color: rgb(71, 194, 71);
+}
+.fa-whatsapp:hover {
+  background-color: rgb(71, 194, 71);
+}
+.fa-envelope-o:hover {
+  background-color: hsl(221, 44%, 41%);
+}
+
+.fa-twitter {
+  color: hsl(195, 100%, 60%);
+  border-color: hsl(195, 100%, 60%);
+}
+
+.fa-twitter:hover {
+  background-color: hsl(195, 100%, 60%);
+}
+
+.fa-google-plus {
+  color: hsl(7, 71%, 55%);
+  border-color: hsl(7, 71%, 55%);
+}
+
+.fa-google-plus:hover {
+  background-color: hsl(7, 71%, 55%);
+}
+
+.fa-linkedin {
+  color: hsl(199, 85%, 36%);
+  border-color: hsl(199, 85%, 36%);
+}
+
+.fa-linkedin:hover {
+  background-color: hsl(199, 85%, 36%);
+}
+
+.fa-envelope-o:hover, .fa-twitter:hover, .fa-google-plus:hover, .fa-linkedin:hover, .fa-whatsapp:hover{
+  color: hsl(0, 0%, 100%);
+}
+
+.screen-reader {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+
+  
+   @media only screen and (max-width: 500px) {
+  
+}

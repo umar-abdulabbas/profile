@@ -1,5 +1,36 @@
-<div [@bottom] style="height:100vh; border-top:5px solid #29afe2; background: rgba(0, 0, 0, 0.1); ">
-  <h1 class="aboutHeader">Contact</h1>
+<div [@bottom] id="contactLayout">
+  <h1 class="contactHeader">Contact</h1>
+  <div id="contactContainer"> 
+    <ul class="social-icons">
+  <li class="tab">
+    <a href="mailto:umar432@gmail.com" target="_blank">
+      <i class="fa fa-envelope-o circle"></i>
+      <span class="screen-reader">Facebook</span>
+    </a>
+  </li>
+  <li class="tab">
+    <a href="https://twitter.com/umar432" target="_blank">
+      <i class="fa fa-twitter circle"></i>
+      <span class="screen-reader">Twitter</span>
+    </a>
+  </li>
+  
+  <li class="tab">
+    <a href="https://www.linkedin.com/in/umar-kathap-76b97319/" target="_blank">
+      <i class="fa fa-linkedin circle"></i>
+      <span class="screen-reader">LinkedIn</span>
+    </a>
+  </li>
+  <li class="tab">
+    <a href="whatsapp://send?text=Hello World!&phone=+316499668445" target="_blank">
+      <i class="fa fa-whatsapp circle"></i>
+      <span class="screen-reader">whatsapp</span>
+    </a>
+  </li>
+</ul>
+
+
+  </div>
 <div class="arrowbtn animated slideInUp" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>	
 </div>
   

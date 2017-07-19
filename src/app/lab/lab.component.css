@@ -1,0 +1,26 @@
+   #labLayout{
+       border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.9); height: 100vh;align-content: center;animation-delay:10s; justify-content: center;
+   }
+    .labHeader{
+         
+         color: #000;
+         font-size: bold;
+         text-align: center;
+    }
+    .aboutSubHeader{
+        font-size: 18px;
+        color: #2a2b2c;
+        padding: 0px 20px;
+        text-align: justify;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    .skillsKI{
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px;
+        color:#000;
+    }
+  
+   @media only screen and (max-width: 500px) {
+   
+}

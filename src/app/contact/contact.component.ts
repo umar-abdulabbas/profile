@@ -4,7 +4,7 @@ import { bottom } from '../animations/animations.component';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styles: [],
+  styleUrls: ['./contact.component.css'],
    animations: [bottom],
   host: { '[@bottom]': '' }
 })
