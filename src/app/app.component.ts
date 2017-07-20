@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
 
    id:number = 1 ; 
     ngOnInit() {
+    console.log(this.ngOnInit);
   }
     constructor(private router:Router){
       

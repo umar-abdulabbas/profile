@@ -1,11 +1,12 @@
-<div  [@bottom] id="introLayout" class="center">
+<div  [@bottom] id="introLayout" class="center animated fadeInUp" >
 	<div style=" padding-top:15%;">
 			<div class="name-txt-center">
-				<div class="name-left"><img src="./assets/images/UMAR_text.png"></div>
-				<div class="name-right"><img src="./assets/images/ABBAS_text.png"></div>
+				<div class="name-left" [ngClass]="{'animated fadeInLeft':show}"><img src="./assets/images/UMAR_text.png"></div>
+				<div class="name-right"[ngClass]="{'animated fadeInRight':show}"><img src="./assets/images/ABBAS_text.png"></div>
 				<div class="clear" ></div>
 			</div>
-			<div class="links">FRONT-END DEVELOPER <i>•</i>&nbsp;&nbsp;WEB ANALYST <i>•</i>&nbsp;&nbsp;UI/UX DESIGNER </div>
+			<div class="links" [ngClass]="{'animated zoomIn':show}">FRONT-END DEVELOPER <i>•</i>&nbsp;&nbsp;WEB ANALYST <i>•</i>&nbsp;&nbsp;UI/UX DESIGNER </div>
 	  </div>
+	 
 	<div class="arrowbtn" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>		
 </div>

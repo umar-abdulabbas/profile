@@ -11,7 +11,7 @@ import { bottom, zoom } from '../animations/animations.component';
   host: { '[@bottom]': '' , '[@zoom]': '' }
 })
 export class AboutComponent implements OnInit {
-
+show:boolean = true;
     ngOnInit() {
   }
 

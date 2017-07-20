@@ -46,18 +46,19 @@
         text-align: justify;
         font-family: 'Open Sans Condensed', sans-serif;
     }
+    .row{ display:block; padding-top: 0px;}
     #scrollDiv{
-        height: 370px;
+        height: 70%;
         overflow-y: scroll;
         box-shadow: 0 4px 6px -6px #ccc;
             }
     
     
     .para-head{color:#29afe2!important; font-size:18px; font-weight:600;}
-    .bdr-left{ margin: 0 auto; text-align: center;}
-    .bdr-left img{ width: auto;  height: 150px; border:1px solid #29afe2;  border-radius: 400px;}
+    .bdr-left{ margin: 0 auto; text-align: center; margin: 0 auto; width: 100%;}
+    .bdr-left img{ width: auto;  height: 150px; border:1px solid #29afe2;  border-radius: 400px; margin-top: 0px;}
 
-    .bdr-right{color:#2a2b2c; font-family: 'Open Sans Condensed', sans-serif;  font-size: 14px;  color:#000; padding:20px}
+    .bdr-right{color:#2a2b2c; font-family: 'Open Sans Condensed', sans-serif;  font-size: 14px;  color:#000; width: 100%; }
     .butdownload{  display: inline-block; padding: 14px 20px 12px; color: #fff; font-size: 14px; line-height: 20px;font-weight: 300; text-transform: uppercase; text-align: center; vertical-align: middle; cursor: pointer; border: none;  background:#29afe2;}
    .but-cent {
     text-align: center;

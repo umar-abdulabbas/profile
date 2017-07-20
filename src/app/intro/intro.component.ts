@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import {MdButtonModule, MdCheckboxModule} from '@angular/material';
 import {trigger, state, style, animate,  transition} from '@angular/animations';
 import { Router } from '@angular/router';
@@ -11,9 +11,13 @@ import { bottom, zoom } from '../animations/animations.component';
   host: { '[@bottom]': '' , '[@zoom]': '' }
 })
 
-export class IntroComponent implements OnInit {
 
+export class IntroComponent implements OnInit {
+ show:boolean = true;
+ 
   ngOnInit() {
+    
+   
   }
   constructor( private router:Router)
   {
@@ -24,6 +28,9 @@ export class IntroComponent implements OnInit {
   nextComponent(){
     this.router.navigateByUrl('/about');
   }
+  
+
+
 }
 
 

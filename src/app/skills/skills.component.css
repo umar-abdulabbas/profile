@@ -22,5 +22,9 @@
     }
   
    @media only screen and (max-width: 500px) {
-   
+   #scrollDiv{
+        height: 70%;
+        overflow-y: scroll;
+        box-shadow: 0 4px 6px -6px #ccc;
+            }
 }
