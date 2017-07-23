@@ -6,6 +6,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { WorksComponent } from './works/works.component';
 import { LabComponent } from './lab/lab.component';
 import { ContactComponent } from './contact/contact.component';
+import { CarouselComponent} from './carousel/carousel.component';
 //import { FooterComponent } from './footer/footer.component';
 
 const MAINMENU_ROUTES: Routes = [
@@ -15,7 +16,8 @@ const MAINMENU_ROUTES: Routes = [
     {path:'skills',component:SkillsComponent},
     {path:'works',component:WorksComponent},
     {path:'lab', component:LabComponent},
-    {path:'contact',component:ContactComponent}
+    {path:'contact',component:ContactComponent},
+    {path:'carousel',component:CarouselComponent}
 ];
 
 export const CONST_ROUTING = RouterModule.forRoot(MAINMENU_ROUTES);

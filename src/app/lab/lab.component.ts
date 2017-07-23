@@ -1,13 +1,21 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, Directive } from '@angular/core';
 import { Router } from '@angular/router';
 import { bottom } from '../animations/animations.component';
+import { CarouselComponent } from '../carousel/carousel.component';
+
 @Component({
+  
   selector: 'app-lab',
   templateUrl: './lab.component.html',
   styleUrls: ['./lab.component.css'],
    animations: [bottom],
-  host: { '[@bottom]': '' }
+  host: { '[@bottom]': '' },
+  
 })
+@Directive({
+  selector: '[CarouselComponent]',
+})
+
 export class LabComponent implements OnInit {
   pageName = 'contact'
   @Input()

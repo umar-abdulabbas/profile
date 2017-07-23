@@ -16,6 +16,9 @@ import { LabComponent } from './lab/lab.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CarouselComponent } from './carousel/carousel.component';
+
+
 
 @NgModule({
   declarations: [
@@ -29,6 +32,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     LabComponent,
     ContactComponent,
     FooterComponent,
+    CarouselComponent,
+   
     
   ],
   imports: [
