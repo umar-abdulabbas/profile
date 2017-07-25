@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,Pipe, PipeTransform} from '@angular/core';
+import { BrowserModule} from '@angular/platform-browser';
+
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,7 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselComponent } from './carousel/carousel.component';
-
+import { SafePipe } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -33,8 +34,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     ContactComponent,
     FooterComponent,
     CarouselComponent,
-   
-    
+    SafePipe
   ],
   imports: [
     BrowserModule,
