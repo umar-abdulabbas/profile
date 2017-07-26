@@ -1,6 +1,6 @@
 import { NgModule,Pipe, PipeTransform} from '@angular/core';
 import { BrowserModule} from '@angular/platform-browser';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -52,7 +52,8 @@ import { HamburgerComponent } from './hamburger/hamburger.component';
     MdProgressBarModule,
     MdCardModule,
     MdTableModule,
-    MdSidenavModule
+    MdSidenavModule,
+    FlexLayoutModule
   ],
    exports: [MdButtonModule, MdCheckboxModule],
   providers: [],
