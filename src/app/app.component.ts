@@ -1,23 +1,37 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { Router } from '@angular/router';
+import { Background } from './test';
+import { SharedService } from './profile.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
- 
+  providers: [SharedService]
 })
 export class AppComponent implements OnInit{
-
-   id:number = 1 ; 
-    ngOnInit() {
-    console.log(this.ngOnInit);
-  }
-    constructor(private router:Router){
+ hidden:boolean = true;
+ wasClicked:boolean = false;
+ animate:boolean = true;
+ BACKGROUNDS : Background[];
+  
+   
+    constructor(private router:Router, private background:SharedService){
       
     }
-
-  navigate(){
-      //this.router.navigateByUrl('/about', {});
+     ngOnInit() {
+    this.getBackgroundData();
+      
+    
   }
+    getBackgroundData(): void{
+    this.background.getBackgroundData().then( BACKGROUNDS => this.BACKGROUNDS = BACKGROUNDS);
+   }
+   onClick() {
+        this.wasClicked= !this.wasClicked;
+        this.animate = !this.animate;
+        this.hidden=!this.hidden;
+        
+    }
+
 }

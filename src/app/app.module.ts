@@ -4,7 +4,7 @@ import { BrowserModule} from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCheckboxModule, MdTabsModule, MdGridListModule, MdInputModule, MdListModule, MdProgressBarModule, MdCardModule, MdTableModule} from '@angular/material';
+import { MdButtonModule, MdCheckboxModule, MdTabsModule, MdGridListModule, MdInputModule, MdListModule, MdProgressBarModule, MdCardModule, MdTableModule, MdSidenavModule} from '@angular/material';
 import { CONST_ROUTING } from './app.routing'; 
 import { AppComponent } from './app.component';
 import { AnimationsComponent} from './animations/animations.component';
@@ -16,9 +16,9 @@ import { WorksComponent } from './works/works.component';
 import { LabComponent } from './lab/lab.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SafePipe } from './carousel/carousel.component';
+import { HamburgerComponent } from './hamburger/hamburger.component';
 
 
 @NgModule({
@@ -34,7 +34,8 @@ import { SafePipe } from './carousel/carousel.component';
     ContactComponent,
     FooterComponent,
     CarouselComponent,
-    SafePipe
+    SafePipe,
+    HamburgerComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +52,7 @@ import { SafePipe } from './carousel/carousel.component';
     MdProgressBarModule,
     MdCardModule,
     MdTableModule,
-    FlexLayoutModule
+    MdSidenavModule
   ],
    exports: [MdButtonModule, MdCheckboxModule],
   providers: [],

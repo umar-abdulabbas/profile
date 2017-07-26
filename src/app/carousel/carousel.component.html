@@ -1,11 +1,12 @@
-<div class="carousel">
+<div>
 
 
        <div style="width:680px; height:360px; background-color:yellow;">
-            <div style="float:left; width:20px;background-color:#ccc;" (click)="next()">3</div>
+       <div  class="carousel">
+            <div style="float:left; width:20px;background-color:#ccc;" (click)="prev()">3</div>
             <div style="float:left;width:640px; height:360px; background-color:green; overflow:hidden">
                      
-  <div *ngFor="let Youtube of YOUTUBES">
+  <div *ngFor="let Youtube of YOUTUBES" class="slides">
       <!-- <span>{{Youtube.title}}</span>
       <span>{{Youtube.url}}</span> -->
       
@@ -15,7 +16,8 @@
 
                 
             </div>
-            <div style="float:right; width:20px; background-color:red;" (click)="previous()">1</div>
+            <div style="float:right; width:20px; background-color:red;" (click)="next()">1</div>
             <div style="clear:both;"></div>
+            </div>
        </div> 
 </div>

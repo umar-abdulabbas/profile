@@ -1,57 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 
-body{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
-margin: 0px;
-background: url("./assets/images/laptop_code.jpg") no-repeat ;
 
-background-size: auto 100%;     
-xbackground:#222222;
--webkit-background-size: cover;
-color: #FFF!important; overflow: hidden;
-}
-#loading{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
+body{ margin: 0px; padding: 0px; background-size: auto 100%; -webkit-background-size: cover; color: #FFF; overflow: hidden; font-family: 'Pontano Sans', sans-serif;}
+#loading{  margin: 0;  position: absolute;  top: 50%;  left: 50%;  margin-right: -50%; transform: translate(-50%, -50%)}
 #loading img{ background-size:50px;}
-#layout{
-   /* background: url("/assets/images/umar_bg.png") no-repeat center center;*/
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    min-height: 800px;
-    background-image: url("./assets/images/grid.png");
-
-}
-md-grid-tile {
-  background: #222222;
-  
-}
-
-
-.xcenter{ margin: 0 auto; position: relative; max-width: 1400px; padding-left: 24px; padding-right: 24px;}
 .clear{clear:both;}
 a:link{text-decoration:none;}
 
-.homedisplay{display:none;}
 
 
-.links {text-align:center; color:#FFF; font-size:20px; margin-top:30px}
-.links i { color:#29afe2; font-size:24px; font-weight:700;}
-.arrowbtn{ border-radius: 50%; margin:0 auto; cursor: pointer;  width: 50px; height: 50px; border: 1px solid #29afe2; background: rgba(43,176,224,0.5); position: absolute; bottom:60px; left: 48%; }
+
+.arrowbtn{ border-radius: 50%; margin:0 auto; cursor: pointer;  width: 50px; height: 50px; border: 1px solid #29afe2; background: rgba(43,176,224,0.5); position: absolute;left: 48%; }
 .arrowbtn span{ line-height:50px; color:#FFF; font-size:22px; display:block;  text-align:center;}
 
-    .mat-tab-header{
-        position:absolute!important;
-        bottom:50px;
-      }
+ 
  
  @media only screen and (max-width: 500px) {
   

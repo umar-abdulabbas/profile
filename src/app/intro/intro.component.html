@@ -1,12 +1,17 @@
-<div  [@bottom] id="introLayout" class="center animated fadeInUp" >
-	<div style=" padding-top:15%;">
+<div [ngClass]="{'introLayout':'true', 'open':open,'close':close}" >
+	<div style=" padding-top:20%;">
 			<div class="name-txt-center">
-				<div class="name-left" [ngClass]="{'animated fadeInLeft':show}"><img src="./assets/images/UMAR_text.png"></div>
-				<div class="name-right"[ngClass]="{'animated fadeInRight':show}"><img src="./assets/images/ABBAS_text.png"></div>
-				<div class="clear" ></div>
+				 <div [ngClass]="{'name-left':'true', 'open':open}"><img src="./assets/images/UMAR_text.png"></div>
+				<div [ngClass]="{'name-right':'true','open':open}"><img src="./assets/images/ABBAS_text.png"></div>
+				<div class="clear" ></div> 
 			</div>
-			<div class="links" [ngClass]="{'animated zoomIn':show}">FRONT-END DEVELOPER <i>•</i>&nbsp;&nbsp;WEB ANALYST <i>•</i>&nbsp;&nbsp;UI/UX DESIGNER </div>
+			<div  [ngClass]="{'introTitle':'true', 'open':open}">
+				<div class="links" [ngClass]="{'xanimated zoomIn':show}">FRONT-END DEVELOPER <i>•</i>&nbsp;&nbsp;WEB ANALYST <i>•</i>&nbsp;&nbsp;UI/UX DESIGNER </div>
+			</div>
+			<div [ngClass]="{'arrowbtn':'true', 'open':open}"  (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>	
+			
 	  </div>
 	 
-	<div class="arrowbtn" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>		
+			
+	
 </div>

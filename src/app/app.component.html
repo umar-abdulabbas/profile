@@ -1,7 +1,13 @@
-<!-- Layout -->
 
-<div id="Layout">
-    <router-outlet></router-outlet>
-    
-</div>
+<div class="containerWrap" *ngFor="let Background of BACKGROUNDS;" [style.backgroundImage]="'url(' + Background.background +')'">
+    <div id="routerWrap">
+        <router-outlet></router-outlet>
+    </div> <!--// # routerWrap Ends Here --> 
+    <!--Top Menu -->
+    <div><app-hamburger></app-hamburger></div>
+</div> <!-- #containerWrap Ends Here -->
+
 <app-footer></app-footer>
+<!-- 
+<div  [hidden]="hidden" class="animated" [ngClass]="{'fadeInUp': wasClicked, 'shake': animate}"
+     style="position:absolute; height:300px; background-color:#fff; width:100%; bottom:0px; box-shadow: 0 0 1em gold" >Umar</div> -->

@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 
-import { Youtube } from './youtube';
-import { YOUTUBES } from './mock-youtubes';
+import { Youtube } from './profile';
+import { Background } from './test';
+
+import { YOUTUBES, BACKGROUNDS } from './profile-data';
 @Injectable() 
-    export class YoutubeService {
+    export class SharedService {
         getYoutube() : Promise<Youtube[]>{
             return Promise.resolve(YOUTUBES);
         }
@@ -13,4 +15,11 @@ import { YOUTUBES } from './mock-youtubes';
                 setTimeout( () => resolve(this.getYoutube()), 2000);
             });
         }
+
+        getBackgroundData(): Promise<Background[]> {
+                return Promise.resolve(BACKGROUNDS);
+                
+        }
     }
+
+   

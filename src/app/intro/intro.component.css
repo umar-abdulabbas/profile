@@ -1,14 +1,119 @@
- #introLayout{
-    border-top:5px solid #29afe2; background: rgba(54, 25, 25, .5); height:100vh;
- }
+ .introLayout{
+  border-top:5px solid #29afe2; background: rgba(54, 25, 25, .5); height:100vh; position: fixed;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  width:100%;   
+  }
+.introLayout.open{ animation: fadeInUp .5s ease; }
+.introLayout.close{ animation: fadeInUp .5s ease; }
+
 .name-txt-center div img{ width:400px;}
-.name-left{ float: left; width:50%; text-align:right;}
+.name-left{ float: left; width:50%; text-align:right; position: fixed; }
 .name-right{ float:right; width:50%; }
+.name-left.open{ 
+  animation: fadeInLeft .55s ease forwards;
+ 
+  
+  
+}
+.name-right.open{
+  animation: fadeInRight .55s ease forwards;
+  
+}
+
+.links {text-align:center; color:#FFF; font-size:20px; margin-top:30px}
+.links i { color:#29afe2; font-size:24px; font-weight:700;}
+
+.introTitle{
+  margin:20px;
+}
+
+.introTitle.open{
+  animation: fadeInUp .5s ease forwards;
+  
+}
+.arrowbtn.open{
+  animation: bounce .55s ease;
+   transform-origin: center bottom;
+}
+
+@keyframes fadeInUp { 
+from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes bounce {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
 
 @media only screen and (max-width: 500px) {
-  #introLayout{
-    background: rgba(54, 25, 25, .8); 
- }
+
   .name-txt-center div img{ width:120px; margin-top:80px;} 
    .arrowbtn{  left:40%;}
    

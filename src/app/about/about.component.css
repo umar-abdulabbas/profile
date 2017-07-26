@@ -1,5 +1,5 @@
    #aboutLayout{
-       border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.9); height: 100vh;align-content: center;animation-delay:10s; justify-content: center;
+       border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.9); xheight: 100vh;align-content: center;animation-delay:10s; justify-content: center;
    }
     .aboutHeader{
          
@@ -14,9 +14,6 @@
         text-align: justify;
         font-family: 'Open Sans Condensed', sans-serif;
     }
-    #scrollDiv{
-        
-            }
     
     
     .para-head{color:#29afe2!important; font-size:18px; font-weight:600;}
@@ -47,11 +44,7 @@
         font-family: 'Open Sans Condensed', sans-serif;
     }
     .row{ display:block; padding-top: 0px;}
-    #scrollDiv{
-        height: 70%;
-        overflow-y: scroll;
-        box-shadow: 0 4px 6px -6px #ccc;
-            }
+  
     
     
     .para-head{color:#29afe2!important; font-size:18px; font-weight:600;}

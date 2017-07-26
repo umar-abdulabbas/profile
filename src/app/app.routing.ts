@@ -7,6 +7,7 @@ import { WorksComponent } from './works/works.component';
 import { LabComponent } from './lab/lab.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarouselComponent} from './carousel/carousel.component';
+
 //import { FooterComponent } from './footer/footer.component';
 
 const MAINMENU_ROUTES: Routes = [

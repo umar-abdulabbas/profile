@@ -1,0 +1,14 @@
+ 
+    <div class="button_container" id="toggle" (click)="onClick()" [ngClass]="{'active': wasClicked}"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="overlay" id="overlay" [ngClass]="{'open': wasClicked}">
+      <nav class="overlay-menu">
+        <ul>
+          <li  routerLinkActive="active"><a href="#" [routerLink]="['/intro']" (click)="onClick()">Introduction</a></li>
+          <li><a href="#"  [routerLink]="['/about']" (click)="onClick()">About</a></li>
+          <li><a href="#"  [routerLink]="['/works']" (click)="onClick()">Work</a></li>
+          <li><a href="#"  [routerLink]="['/skills']" (click)="onClick()">Skills</a></li>
+          <li><a href="#"  [routerLink]="['/lab']" (click)="onClick()">Avocation</a></li>
+          <li><a href="#"  [routerLink]="['/contact']" (click)="onClick()">Contact</a></li>
+        </ul>
+      </nav>
+    </div>

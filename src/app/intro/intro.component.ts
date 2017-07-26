@@ -1,8 +1,8 @@
-import { Component, Input, OnInit} from '@angular/core';
-import {MdButtonModule, MdCheckboxModule} from '@angular/material';
+import { Component, Input, OnInit, AfterViewInit, OnDestroy} from '@angular/core';
 import {trigger, state, style, animate,  transition} from '@angular/animations';
 import { Router } from '@angular/router';
 import { bottom, zoom } from '../animations/animations.component';
+
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
@@ -12,12 +12,21 @@ import { bottom, zoom } from '../animations/animations.component';
 })
 
 
-export class IntroComponent implements OnInit {
- show:boolean = true;
- 
+export class IntroComponent implements OnInit  {
+ open:boolean = false;
+ close:boolean = false;
   ngOnInit() {
-    
+     console.log("Init");
    
+  }
+  ngAfterViewInit(){
+    this.open = true;
+     console.log("After View");
+  }
+  ngOnDestroy(){
+   
+    this.close = true;
+    console.log("Destroy");
   }
   constructor( private router:Router)
   {
@@ -29,8 +38,6 @@ export class IntroComponent implements OnInit {
     this.router.navigateByUrl('/about');
   }
   
-
-
+  
 }
-
 
