@@ -17,7 +17,7 @@ export class WorksComponent implements OnInit {
   }
   
   nextComponent(){
-    console.log("Clicked");
+   
     this.router.navigateByUrl('/lab');
   }
 }

@@ -120,13 +120,19 @@ h1 {
 .overlay.open li:nth-of-type(4) {
   animation-delay: .50s;
 }
+.overlay.open li:nth-of-type(5) {
+  animation-delay: .55s;
+}
+.overlay.open li:nth-of-type(6) {
+  animation-delay: .60s;
+}
 .overlay nav {
   position: relative;
   height: 70%;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 50px;
-  font-family: 'Varela Round', serif;
+  font-size: 30px;
+   font-family: 'Pontano Sans', sans-serif;
   font-weight: 400;
   text-align: center;
 }
@@ -141,7 +147,7 @@ h1 {
 .overlay ul li {
   display: block;
   height: 25%;
-  height: calc(100% / 4);
+  height: calc(100% / 6);
   min-height: 50px;
   position: relative;
   opacity: 0;

@@ -1,32 +1,30 @@
-<div [@bottom] id="skillsLayout">
-  <h1 class="skillsHeader">Skills</h1>
+<div  [ngClass]="{'skillsLayout':'true', 'open':'true'}" >
+  <h1 class="skillsHeader">Skills "</h1>
   <div id="scrollDiv">
-  <div class="skillsKI"> 
-    <h2>HTML & CSS</h2>
-    <md-progress-bar class="example-margin" [color]="color" [mode]="mode" [value]="value" [bufferValue]="bufferValue"></md-progress-bar>
-    <i>knowledge indicator</i>
-  </div>
-   <div class="skillsKI"> 
-    <h2>Javascript</h2>
-    <md-progress-bar class="example-margin" [color]="color" [mode]="mode" [value]="value" [bufferValue]="bufferValue"></md-progress-bar>
-    <i>knowledge indicator</i>
-  </div>
-  <div class="skillsKI"> 
-    <h2>RWD</h2>
-    <md-progress-bar class="example-margin" [color]="color" [mode]="mode" [value]="value" [bufferValue]="bufferValue"></md-progress-bar>
-    <i>knowledge indicator</i>
-  </div>
-  <div class="skillsKI"> 
-    <h2>Adobe</h2>
-    <md-progress-bar class="example-margin" [color]="color" [mode]="mode" [value]="value" [bufferValue]="bufferValue"></md-progress-bar>
-    <i>knowledge indicator</i>
-  </div>
-  <div class="skillsKI"> 
-    <h2>Node</h2>
-    <md-progress-bar class="example-margin" [color]="color" [mode]="mode" [value]="value" [bufferValue]="bufferValue"></md-progress-bar>
-    <i>knowledge indicator</i>
-  </div>
+          
+          <ul class="bar-graph" > 
+            <li>
+              <p>HTML & CSS</p>
+              <div class="bar-wrap"><span class="bar-fill" style="width: 80%;"></span></div>
+            </li> 
+            <li>
+              <p>Javascript</p>
+              <div class="bar-wrap"><span class="bar-fill" style="width: 60%;"></span></div>
+            </li> 
+            <li>
+              <p>RWD</p>
+              <div class="bar-wrap"><span class="bar-fill"  style="width: 80%;"></span></div>
+            </li> 
+            <li>
+              <p>Adobe</p>
+              <div class="bar-wrap"><span class="bar-fill" style="width: 70%;"></span></div>
+            </li> 
+            <li>
+              <p>Node</p>
+              <div class="bar-wrap"><span class="bar-fill" style="width: 40%;"></span></div>
+            </li> 
+          </ul>
   </div>
   <div class="arrowbtn" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>	
 </div>
-
+<div class="divSpace">&nbsp;</div>

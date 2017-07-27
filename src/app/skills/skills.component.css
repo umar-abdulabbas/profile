@@ -1,8 +1,12 @@
-   #skillsLayout{
+   .skillsLayout{
        border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.9); height: 100vh;align-content: center;animation-delay:10s; justify-content: center;
    }
+     .skillsLayout.open{
+       animation: fadeInUp .5s ease; 
+       
+   }
     .skillsHeader{
-         
+         font-family: 'Pontano Sans', sans-serif;
          color: #000;
          font-size: bold;
          text-align: center;
@@ -20,11 +24,77 @@
         padding: 10px;
         color:#000;
     }
+
+
+    @keyframes bar-fill {
+  0% {
+    width: 0;
+  }
+}
+@-webkit-keyframes bar-fill {
+  0% {
+    width: 0;
+  }
+}
+@-moz-keyframes bar-fill {
+  0% {
+    width: 0;
+  }
+}
+@-o-keyframes bar-fill {
+  0% {
+    width: 0;
+  }
+}
+.bar-graph {
+  list-style: none;
+  margin: 50px 0px auto;
+}
+
+.bar-wrap1 {
+ 
+  border-radius: 1px 1px 1px 1px;
+  background-color: rgba(0, 155, 202, 0.2);
+  border: 1px solid rgba(0, 155, 202, 0.8);
+  margin-bottom: 10px;
+}
+
+.bar-fill {
+  
+  border-radius: 5px 5px 5px 5px;
+  
+  animation: bar-fill 1s ease;
+  background-color: #6B8E23;
+  display: block;
+  height: 15px;
+  width: 0px;
+  margin-bottom: 40px;
+}
+
+
+p {
+  color: #29afe2;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
   
    @media only screen and (max-width: 500px) {
-   #scrollDiv{
-        height: 70%;
-        overflow-y: scroll;
-        box-shadow: 0 4px 6px -6px #ccc;
-            }
+   
+}
+
+@keyframes fadeInUp { 
+from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }

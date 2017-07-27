@@ -1,12 +1,12 @@
-<div id="aboutLayout"  >
+<div  [ngClass]="{'aboutLayout':'true', 'open':'true'}" >
     <h1 class="aboutHeader">ABOUT "</h1>
   
   	<p class="aboutSubHeader">
     Proficient IT professional with 7 years’ experience and a real passion for front-end and mobile application development. Readily embracing cutting-edge technology, gained an in-depth understanding of the main web and mobile platforms. Worked with various domains like Banking, Retail & Health Care. In leading people along with ample opportunities for growth and work with highly technical web and mobile applications.
   	</p>
   	<div class="row">
-			<div class="bdr-left">
-			<img src="./assets/images/umar_small.png">
+			<div [ngClass]="{'bdr-left':'true', 'open':'true'}" >
+			<img src="./assets/images/umar_small.png"/>
 			</div>
 			<div class="bdr-right">
 			    <p class="para-head">FRONT-END DEVELOPER <i>•</i>&nbsp;&nbsp;WEB ANALYST <i>•</i>&nbsp;&nbsp;UI/UX DESIGNER</p>
@@ -20,6 +20,8 @@
 			</div>
 			<div class="clear"></div>
 	</div>
-
+<div class="clear"></div>
 <div class="arrowbtn" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>
+<div class="clear"></div>
 </div>
+<div class="divSpace">&nbsp;</div>

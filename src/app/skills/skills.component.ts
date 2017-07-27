@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { bottom } from '../animations/animations.component';
-import {MdProgressSpinnerModule} from '@angular/material';
+
 
 @Component({
   selector: 'app-skills',

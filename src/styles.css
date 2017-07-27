@@ -1,19 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-body{ margin: 0px; padding: 0px; background-size: auto 100%; -webkit-background-size: cover; color: #FFF; overflow: hidden; font-family: 'Pontano Sans', sans-serif;}
+body{ margin: 0px; padding: 0px; background-size: auto 100%; -webkit-background-size: cover; color: #FFF;  font-family: 'Pontano Sans', sans-serif;}
 #loading{  margin: 0;  position: absolute;  top: 50%;  left: 50%;  margin-right: -50%; transform: translate(-50%, -50%)}
 #loading img{ background-size:50px;}
 .clear{clear:both;}
 a:link{text-decoration:none;}
 
+/*Button*/
 
 
-
-.arrowbtn{ border-radius: 50%; margin:0 auto; cursor: pointer;  width: 50px; height: 50px; border: 1px solid #29afe2; background: rgba(43,176,224,0.5); position: absolute;left: 48%; }
+.arrowbtn{ border-radius: 50%; margin:0 auto; cursor: pointer;  width: 50px; height: 50px; border: 1px solid #29afe2; background: rgba(43,176,224,0.5); left: 48%; }
 .arrowbtn span{ line-height:50px; color:#FFF; font-size:22px; display:block;  text-align:center;}
 
- 
+.divSpace{height: 30px;}
  
  @media only screen and (max-width: 500px) {
   

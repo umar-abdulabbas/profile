@@ -1,8 +1,12 @@
-   #worksLayout{
+   .worksLayout{
        border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.9); height: 100vh;align-content: center;animation-delay:10s; justify-content: center;
    }
+    .worksLayout.open{
+       animation: fadeInUp .5s ease; 
+       
+   }
     .worksHeader{
-         
+         font-family: 'Pontano Sans', sans-serif;
          color: #000;
          font-size: bold;
          text-align: center;
@@ -20,7 +24,125 @@
         padding: 10px;
         color:#000;
     }
+    .card{
+        margin:10px;background-color:#fff;box-shadow: 0 0 1em #ccc; 
+    }
+    .cardInner{
+        width: 100%;
+    }
+    .cardLeft{
+        float:left; width:40%; padding:5%; margin:0px auto; text-align:center;
+    }
+    .cardRight{
+        float:left; width:40%; padding:5%; color:#000
+    }
+    @keyframes fadeInUp { 
+from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
   
    @media only screen and (max-width: 500px) {
    
+}
+
+/* grid */
+[class*="row-"] {
+  margin-bottom: 20px;
+}
+[class*="row-"]:last-child {
+  margin-bottom: 0;
+}
+[class*="col-"] {
+}
+
+@media all and ( min-width: 768px ) {
+
+  /* all cols margin */
+  [class*="col-"] {
+    margin-right: 20px;
+  }
+  [class*="col-"]:last-child {
+    margin-right: 0;
+  }
+
+  /* make the columns responsive */
+  .col-1-2 {
+    float: left;
+    width: 50%;
+  }
+  .col-1-4 {
+    float: left;
+    width: 25%;
+  }
+  .col-1-8 {
+    float: left;
+    width: 25%;
+  }
+
+  /* 2 span rows */
+  .row-2 {
+    padding-left: 20px;
+  }
+  .row-2 [class*="col-"]:first-child {
+    margin-left: -20px;
+  }
+
+  /* 4 span rows */
+  .row-4 {
+    padding-left: 60px;
+  }
+  .row-4 [class*="col-"]:first-child {
+    margin-left: -60px;
+  }
+
+  /* 8 span rows */
+  .row-8 {
+    padding-left: 60px;
+  }
+  .row-8 [class*="col-"]:nth-child(4n+1) {
+    margin-left: -60px;
+  }
+  .row-8 [class*="col-"]:nth-child(5n-1) {
+    margin-right: 0;
+  }
+  .row-8 [class*="col-"]:nth-child(6n-1) {
+    clear: both;
+  }
+
+}
+
+@media all and ( min-width: 1200px ) {
+
+  /* adjust width */
+  .col-1-8 {
+    float: left;
+    width: 12.5%;
+  }
+
+  /* 8 span rows */
+  .row-8 {
+    padding-left: 140px;
+  }
+  /* reset these... */
+  .row-8 [class*="col-"]:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  .row-8 [class*="col-"]:nth-child(5n-1) {
+    margin-right: 20px;
+  }
+  .row-8 [class*="col-"]:nth-child(6n-1) {
+    clear: none;
+  }
+  /* and add this */
+  .row-8 [class*="col-"]:nth-child(1) {
+    margin-left: -140px;
+  }
+
 }
