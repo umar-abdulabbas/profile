@@ -1,7 +1,38 @@
-<div [@bottom] id="labLayout">
-  <h1 class="labHeader">Avocation</h1>
-  <div><md-card>Coming Soon </md-card></div>
-  <app-carousel></app-carousel>
-<div class="arrowbtn animated slideInUp" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>	
+<div [ngClass]="{'labLayout':'true', 'open':'true'}">
+  <h1 class="labHeader">Avocation "</h1>
+    
+   
+         <div class="videoContainer">
+           <p >I love capturing the video with my friends & Colleagues and upload it my <a href="https://www.youtube.com/watch?v=fsn-3EX8J0E&list=PLtHJ9QV6YX4toQ_q6OALP8rkT6ohofFgT" target="_blank">YouTube Channel</a></p>
+         <div class="card">
+                      <div class="cardInner">
+                      <div style="text-align:center">
+                           <iframe class="VideoFrame"  src="https://www.youtube.com/embed/fsn-3EX8J0E?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> 
+                      </div>
+                      <div class="clear"></div>
+                      </div>
+                      <div  class="info">Recent Footage with my colleague – Paris Visit  </div>
+        </div> <!-- Card 1 -->
+   
+        </div>
+
+         <div class="videoContainer">
+          
+         <div class="card">
+                      <div class="cardInner">
+                      <div style="text-align:center">
+                           <iframe class="VideoFrame"  src="https://www.youtube.com/embed/Cdgfu2wzLcc?list=PLtHJ9QV6YX4toQ_q6OALP8rkT6ohofFgT&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> 
+                      </div>
+                      <div class="clear"></div>
+                      </div>
+                      <div  class="info">Pongal Festival Footage   </div>
+        </div> <!-- Card 1 -->
+   
+        </div>
+
+ <div class="clear"></div>
+  <div class="divSpace">&nbsp;</div>
+   <div class="arrowbtn animated slideInUp" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>	
+   <div class="divSpace">&nbsp;</div>
 </div>
   

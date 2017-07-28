@@ -1,5 +1,5 @@
    .skillsLayout{
-       border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.9); height: 100vh;align-content: center;animation-delay:10s; justify-content: center;
+       border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.9); height: 100vh;align-content: center; justify-content: center;
    }
      .skillsLayout.open{
        animation: fadeInUp .5s ease; 

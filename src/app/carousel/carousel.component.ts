@@ -1,57 +1,57 @@
-import {Pipe, PipeTransform, Component, OnInit, NgModule} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 //import { Component, OnInit, NgModule} from '@angular/core';
 import {Image} from './image.interface';
 import {BrowserModule} from '@angular/platform-browser'
-import {DomSanitizer} from "@angular/platform-browser";
-import { Youtube } from '../profile';
-import { SharedService } from '../profile.service';
+//import {DomSanitizer} from "@angular/platform-browser";
+//import { Youtube } from '../profile';
+//import { SharedService } from '../profile.service';
 
-   @Pipe({name:'safe'})
-export class SafePipe implements PipeTransform{
-  constructor(private sanitizer: DomSanitizer) {}
-  transform(url) {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
-  }
-}
+  // @Pipe({name:'safe'})
+// export class SafePipe implements PipeTransform{
+//   constructor(private sanitizer: DomSanitizer) {}
+//   transform(url) {
+//     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+//   }
+// }
 
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
-  providers: [SharedService],
+  //providers: [SharedService],
 
 })
 
 export class CarouselComponent implements OnInit {
   slectedIndex : number;
-  YOUTUBES: Youtube[];
+  //YOUTUBES: Youtube[];
   
-  constructor(private youtubeService: SharedService) { 
-      this.slectedIndex = 0;
-      this.YOUTUBES = [];
-  }
+  // constructor(private youtubeService: SharedService) { 
+  //     this.slectedIndex = 0;
+  //     this.YOUTUBES = [];
+  // }
     
   ngOnInit():void {
     //this.getYoutube();
-    this.getYoutubeSlowly();
+   // this.getYoutubeSlowly();
   
   
     
   }
    next() {
-       ++this.slectedIndex;
+     //  ++this.slectedIndex;
     }
 
     prev() {
-        --this.slectedIndex;
+      //  --this.slectedIndex;
     }
    getYoutube(): void{
-    this.youtubeService.getYoutube().then( YOUTUBES => this.YOUTUBES = YOUTUBES);
+   // this.youtubeService.getYoutube().then( YOUTUBES => this.YOUTUBES = YOUTUBES);
    }
    
    getYoutubeSlowly(): void{
-    this.youtubeService.getYoutubeSlowly().then( YOUTUBES => this.YOUTUBES = YOUTUBES);
+   // this.youtubeService.getYoutubeSlowly().then( YOUTUBES => this.YOUTUBES = YOUTUBES);
    }
 }
 

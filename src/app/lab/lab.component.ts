@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter, Directive } from '@angular/core';
 import { Router } from '@angular/router';
 import { bottom } from '../animations/animations.component';
-import { CarouselComponent } from '../carousel/carousel.component';
+;
 
 @Component({
   
@@ -12,9 +12,7 @@ import { CarouselComponent } from '../carousel/carousel.component';
   host: { '[@bottom]': '' },
   
 })
-@Directive({
-  selector: '[CarouselComponent]',
-})
+
 
 export class LabComponent implements OnInit {
   pageName = 'contact'

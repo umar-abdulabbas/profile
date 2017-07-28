@@ -1,5 +1,5 @@
-<div [@bottom] id="contactLayout">
-  <h1 class="contactHeader">Contact</h1>
+<div  [ngClass]="{'contactLayout':'true', 'open':'true'}">
+  <h1 class="contactHeader">Contact "</h1>
   <div id="contactContainer"> 
     <ul class="social-icons">
   <li class="tab">
@@ -31,6 +31,7 @@
 
 
   </div>
-<div class="arrowbtn animated slideInUp" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>	
+  <div class="phone" ><i class="fa fa-phone" aria-hidden="true"></i>+31 649668445(Netherlands), +91 9980573768(India)</div>
+  <div class="arrowbtn animated slideInUp" (click)="nextComponent()"><span class="fa fa-angle-double-down"></span></div>	
 </div>
   

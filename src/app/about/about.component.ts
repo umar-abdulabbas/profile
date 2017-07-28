@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {trigger, state, style, animate, transition} from '@angular/animations';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import { bottom, zoom } from '../animations/animations.component';
 
 @Component({
@@ -13,6 +13,14 @@ import { bottom, zoom } from '../animations/animations.component';
 export class AboutComponent implements OnInit {
 show:boolean = true;
     ngOnInit() {
+      this.router.events.subscribe( (evt) => {
+        if(!(evt instanceof NavigationEnd)){
+          return;
+        }
+        window.scrollTo(0,0);
+      });
+
+      
   }
 
   constructor(private router:Router){

@@ -5,7 +5,7 @@ body{ margin: 0px; padding: 0px; background-size: auto 100%; -webkit-background-
 #loading{  margin: 0;  position: absolute;  top: 50%;  left: 50%;  margin-right: -50%; transform: translate(-50%, -50%)}
 #loading img{ background-size:50px;}
 .clear{clear:both;}
-a:link{text-decoration:none;}
+a:link{text-decoration:underline;}
 
 /*Button*/
 

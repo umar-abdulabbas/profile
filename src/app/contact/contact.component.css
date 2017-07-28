@@ -1,13 +1,16 @@
-   #contactLayout{
+   .contactLayout{
        border-top:5px solid #29afe2; background: rgba(255, 255, 255, 0.9); height: 100vh;align-content: center;animation-delay:10s; justify-content: center;
    }
-   
+      .contactLayout.open{
+       animation: fadeInUp .5s ease; 
+       
+   }
 #contactContainer{
     margin-top:100px;
     xtext-align: center;
 }
 .contactHeader{
-         
+           font-family: 'Pontano Sans', sans-serif;
          color: #000;
          font-size: bold;
          text-align: center;
@@ -16,7 +19,7 @@
   list-style-type: none;
   margin: 0 auto 20px;
   padding: 0;
-  width: 400px;
+  width: 336px;
   height: 100px;
 }
 
@@ -28,11 +31,11 @@
 
 .circle {
   padding: 15px 15px;
-  width: 50px;
-  font-size: 50px;
+  width: 40px;
+  font-size: 40px;
   text-align: center;
   background: #fff;
-  border-radius: 50px;
+  border-radius: 40px;
   border: solid 2px;
 }
 .fa-whatsapp:before{content:"\f232"}
@@ -89,8 +92,26 @@
   top: -9999px;
 }
 
-
+.phone{
+  color:#000; text-align:center; padding-bottom:20px; font-size:30px
+}
   
    @media only screen and (max-width: 500px) {
+  .phone{
+  color:#000; text-align:center; padding-bottom:20px; font-size:14px;
+}
   
+}
+
+
+  @keyframes fadeInUp { 
+from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }

@@ -17,7 +17,6 @@ import { LabComponent } from './lab/lab.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { SafePipe } from './carousel/carousel.component';
 import { HamburgerComponent } from './hamburger/hamburger.component';
 
 
@@ -34,7 +33,7 @@ import { HamburgerComponent } from './hamburger/hamburger.component';
     ContactComponent,
     FooterComponent,
     CarouselComponent,
-    SafePipe,
+   
     HamburgerComponent
   ],
   imports: [

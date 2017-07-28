@@ -1,4 +1,4 @@
-<div>
+ <!-- <div>
 
 
        <div style="width:680px; height:360px; background-color:yellow;">
@@ -7,10 +7,10 @@
             <div style="float:left;width:640px; height:360px; background-color:green; overflow:hidden">
                      
   <div *ngFor="let Youtube of YOUTUBES" class="slides">
-      <!-- <span>{{Youtube.title}}</span>
-      <span>{{Youtube.url}}</span> -->
+       <span>{{Youtube.title}}</span>
+      <span>{{Youtube.url}}</span> 
       
-     <iframe id="ytplayer" type="text/html" width="640" height="360" [src]="('https://www.youtube.com/embed/'+ Youtube.url ) | safe" frameborder="0" allowfullscreen ></iframe>
+    <iframe id="ytplayer" type="text/html" width="640" height="360" [src]="('https://www.youtube.com/embed/'+ Youtube.url ) | safe" frameborder="0" allowfullscreen ></iframe>
      
     </div>
 
@@ -20,4 +20,5 @@
             <div style="clear:both;"></div>
             </div>
        </div> 
-</div>
+</div> 
+ -->

@@ -162,7 +162,7 @@ h1 {
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
   width: 100%;
 }
-.overlay ul li a:after {
+.xoverlay ul li a:after {
   content: '';
   position: absolute;
   bottom: 0;
