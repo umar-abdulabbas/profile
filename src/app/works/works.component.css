@@ -100,7 +100,7 @@ from {
     padding-left: 60px;
   }
   .row-4 [class*="col-"]:first-child {
-    margin-left: -60px;
+    xmargin-left: -60px;
   }
 
   /* 8 span rows */
